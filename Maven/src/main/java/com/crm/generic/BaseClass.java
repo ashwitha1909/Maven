@@ -45,6 +45,6 @@ public class BaseClass {
 	@AfterTest
 	public void closeBrowser() {
 		driver.manage().window().minimize();
-		driver.quit();
+		driver.close();
 	}
 }
