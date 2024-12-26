@@ -2,7 +2,6 @@ package com.crm.generic;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -12,38 +11,41 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-public class ListenerImplementation extends BaseClass implements ITestListener {
+public class ListenerImplementation extends BaseClass implements ITestListener
+{
 	@Override
-	public void onTestSuccess(ITestResult result) {
-		String res = result.getName();
-		Reporter.log(res + " has got passed", true);
+	public void onTestStart(ITestResult result) {
+		String methodName = result.getName();
+		Reporter.log(methodName+" is started",true);
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result) {
-		String res = result.getName();
-		// We should concatenate the file name along with the current time to avoid
-		// overwriting the same file
-		String timeStamp = LocalDateTime.now().toString().replace(':', '-');
-		TakesScreenshot ts = (TakesScreenshot) driver;
+	public void onTestSuccess(ITestResult result) {
+		String methodName = result.getName();
+		Reporter.log(methodName+" is passed",true);
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result)
+	{
+		String methodName = result.getName();
+		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./screenshots/" + res + timeStamp + ".png");
-		try {
+		File dest = new File("./ScreenShot/"+methodName+".png");
+		try 
+		{
 			FileUtils.copyFile(src, dest);
-		} catch (IOException e) {
+		} 
+		catch (IOException e) 
+		{
+
 		}
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		String res = result.getName();
-		Reporter.log(res + " has got skipped", true);
-	}
-
-	@Override
-	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestStart(result);
+		String methodName = result.getName();
+		Reporter.log(methodName+" is skipped",true);
 	}
 
 	@Override

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[open browser]]>
+    </line>
+    <line>
+      <![CDATA[login]]>
+    </line>
+    <line>
+      <![CDATA[createLead is started]]>
+    </line>
+    <line>
+      <![CDATA[Lead created]]>
+    </line>
+    <line>
+      <![CDATA[createLead is passed]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[login]]>
+    </line>
+    <line>
+      <![CDATA[deleteLead is started]]>
+    </line>
+    <line>
+      <![CDATA[Lead deleted]]>
+    </line>
+    <line>
+      <![CDATA[deleteLead is passed]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[login]]>
+    </line>
+    <line>
+      <![CDATA[createCampaign is started]]>
+    </line>
+    <line>
+      <![CDATA[Campaign created]]>
+    </line>
+    <line>
+      <![CDATA[createCampaign is passed]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[login]]>
+    </line>
+    <line>
+      <![CDATA[deleteCampaign is started]]>
+    </line>
+    <line>
+      <![CDATA[Campaign deleted]]>
+    </line>
+    <line>
+      <![CDATA[deleteCampaign is passed]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[close browser]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-12-26T22:51:41 IST" name="Suite" finished-at="2024-12-26T22:52:09 IST" duration-ms="28031">
+    <groups>
+    </groups>
+    <test started-at="2024-12-26T22:51:41 IST" name="Test" finished-at="2024-12-26T22:52:09 IST" duration-ms="28031">
+      <class name="com.crm.testscript.CampaignModule">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testscript.CampaignModule@702657cc]" started-at="2024-12-26T22:52:01 IST" name="login" finished-at="2024-12-26T22:52:01 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createCampaign()[pri:0, instance:com.crm.testscript.CampaignModule@702657cc]" started-at="2024-12-26T22:52:01 IST" name="createCampaign" finished-at="2024-12-26T22:52:03 IST" duration-ms="2437" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createCampaign is started]]>
+            </line>
+            <line>
+              <![CDATA[Campaign created]]>
+            </line>
+            <line>
+              <![CDATA[createCampaign is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCampaign -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.testscript.CampaignModule@702657cc]" started-at="2024-12-26T22:52:03 IST" name="logout" finished-at="2024-12-26T22:52:03 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testscript.CampaignModule@702657cc]" started-at="2024-12-26T22:52:04 IST" name="login" finished-at="2024-12-26T22:52:04 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="deleteCampaign()[pri:0, instance:com.crm.testscript.CampaignModule@702657cc]" started-at="2024-12-26T22:52:04 IST" name="deleteCampaign" finished-at="2024-12-26T22:52:07 IST" duration-ms="3502" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[deleteCampaign is started]]>
+            </line>
+            <line>
+              <![CDATA[Campaign deleted]]>
+            </line>
+            <line>
+              <![CDATA[deleteCampaign is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCampaign -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.testscript.CampaignModule@702657cc]" started-at="2024-12-26T22:52:07 IST" name="logout" finished-at="2024-12-26T22:52:08 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.crm.testscript.CampaignModule -->
+      <class name="com.crm.testscript.LeadModule">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:51:41 IST" name="openBrowser" finished-at="2024-12-26T22:51:44 IST" duration-ms="3169" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[open browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:51:44 IST" name="login" finished-at="2024-12-26T22:51:45 IST" duration-ms="750" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createLead()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:51:45 IST" name="createLead" finished-at="2024-12-26T22:51:50 IST" duration-ms="5374" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createLead is started]]>
+            </line>
+            <line>
+              <![CDATA[Lead created]]>
+            </line>
+            <line>
+              <![CDATA[createLead is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:51:50 IST" name="logout" finished-at="2024-12-26T22:51:50 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:51:50 IST" name="login" finished-at="2024-12-26T22:51:50 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="deleteLead()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:51:50 IST" name="deleteLead" finished-at="2024-12-26T22:52:00 IST" duration-ms="9544" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[deleteLead is started]]>
+            </line>
+            <line>
+              <![CDATA[Lead deleted]]>
+            </line>
+            <line>
+              <![CDATA[deleteLead is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteLead -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:52:00 IST" name="logout" finished-at="2024-12-26T22:52:01 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.testscript.LeadModule@45752059]" started-at="2024-12-26T22:52:08 IST" name="closeBrowser" finished-at="2024-12-26T22:52:09 IST" duration-ms="637" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[close browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.testscript.LeadModule -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
